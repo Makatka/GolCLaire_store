@@ -5,12 +5,6 @@ import Navigation from "./components/organisms/Navigation/Navigation";
 import TopBar from "./components/organisms/TopBar/TopBar";
 
 
-const Main = styled.div`
-  height: 120vh;
-  width: 100vw;
-  background-color: #ddd;
-
-`
 const App = () => {
 
   return (
@@ -18,7 +12,7 @@ const App = () => {
 
       <TopBar/>
       <Navigation/>
-      <Main/>
+
       <Footer/>
 
     </div>
