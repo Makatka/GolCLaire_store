@@ -4,12 +4,15 @@ import {Container} from '../../templates/Container/Container'
 export const NavWrapper = styled.div`
   min-height: 60px;
   border-bottom: 1px solid ${({theme}) => theme.colors.semi_light_grey};
+  display: flex;
+  align-items: center;
 
   ${Container}{
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: ${({theme}) => theme.colors.accent};
+    
 
     & > div {
       display: flex;

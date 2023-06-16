@@ -5,6 +5,8 @@ export const Wrapper = styled.section`
   height: 44px;
   background-color: ${({theme}) => theme.colors.accent};
   color: white;
+  display: flex;
+  align-items: center;
   
 `
 export const FlexWrapper = styled.div`

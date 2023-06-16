@@ -1,8 +1,9 @@
 import React from 'react';
 import Footer from "./components/templates/Footer/Footer";
-import styled, {ThemeProvider} from "styled-components";
 import Navigation from "./components/organisms/Navigation/Navigation";
 import TopBar from "./components/organisms/TopBar/TopBar";
+import Hero from "./components/organisms/Hero/Hero";
+import Slider from "./components/organisms/Slider/Slider";
 
 
 const App = () => {
@@ -12,8 +13,7 @@ const App = () => {
 
       <TopBar/>
       <Navigation/>
-
-      <Footer/>
+      <Hero/>
 
     </div>
   );
