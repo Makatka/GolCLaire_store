@@ -3,7 +3,6 @@ import bannerImg from '../../../assets/image/banner.png'
 
 export const BannerWrapper = styled.a`
   height: 750px;
-  width: 25%;
   background-image: url(${bannerImg});
   position: relative;
   background-size: cover;

@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from "./components/templates/Footer/Footer";
 import Navigation from "./components/organisms/Navigation/Navigation";
 import TopBar from "./components/organisms/TopBar/TopBar";
 import Hero from "./components/organisms/Hero/Hero";
-import Slider from "./components/organisms/Slider/Slider";
+import InfoBanner from "./components/organisms/InfoBanner/InfoBanner";
+import ProductsSection from "./components/organisms/TopProductsSection/ProductsSection";
 
 
 const App = () => {
@@ -14,7 +14,8 @@ const App = () => {
       <TopBar/>
       <Navigation/>
       <Hero/>
-
+      <InfoBanner/>
+      <ProductsSection/>
     </div>
   );
 };

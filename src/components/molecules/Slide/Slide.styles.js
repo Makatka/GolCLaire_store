@@ -36,8 +36,15 @@ export const SlideWrapper = styled.li`
 
     &:last-of-type {
       right: 20px;
-    }
+    }    
+  }
 
+  &:hover span {
+    background-color: rgba(248, 249, 250, 1);
+
+    svg polyline {
+      stroke: ${({theme}) => theme.colors.accent};
+    }
   }
 `
 export const SlideText = styled.div`

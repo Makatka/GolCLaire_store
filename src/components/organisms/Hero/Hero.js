@@ -12,7 +12,7 @@ const Hero = () => {
       <Container>
         <HeroWrapper>
           <Slider/>
-          <Banner />
+          <Banner product="gold piercing" header="flash sale" timeLine="15 nov - 25 nov"/>
         </HeroWrapper>
       </Container>
   );

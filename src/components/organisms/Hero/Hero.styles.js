@@ -10,14 +10,18 @@ export const HeroWrapper = styled.div`
   gap: 20px;
 
   ${Slider} {
-    width: 75%;
+    width: 70%;
   }
  
+  ${BannerWrapper}{
+    min-width: 25%;
+    max-width: 370px;
+  }
 
   @media screen and (max-width: 1025px){
     flex-direction: column;
     ${BannerWrapper} {
-      width: 100%;
+      max-width: 100%;
       height: 300px;
     }
   }
