@@ -6,16 +6,16 @@ import InfoBanner from "./components/organisms/InfoBanner/InfoBanner";
 import ProductsSection from "./components/organisms/TopProductsSection/ProductsSection";
 
 
+
 const App = () => {
 
   return (
     <div>
-
       <TopBar/>
       <Navigation/>
       <Hero/>
       <InfoBanner/>
-      <ProductsSection/>
+      <ProductsSection />
     </div>
   );
 };

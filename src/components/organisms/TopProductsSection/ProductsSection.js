@@ -4,6 +4,8 @@ import Banner from "../../molecules/Banner/Banner";
 import ProductCart from "../../molecules/ProductCard/ProductCart";
 import {ProductsWrapper, Wrapper} from './ProductsSection.styles'
 import productImage from '../../../assets/image/products/37000208_OR_B-450x450.jpg'
+import {AlertWrapper} from "../../templates/AlertWrapper/AlertWrapper";
+import AlertBanner from "../../molecules/AlertBanner/AlertBanner";
 
 
 const ProductsSectionStyles = () => {
@@ -22,6 +24,10 @@ const ProductsSectionStyles = () => {
           <ProductCart sale img={productImage} rating={3}/>
         </ProductsWrapper>
       </Wrapper>
+      <AlertWrapper>
+        <AlertBanner type='red' header='Super discount for our first purchase' description='Use discount code in checkout page' buttonText='first250'/>
+        <AlertBanner type='yellow' header='2nd shopping surprise campaign'  buttonText='check products'/>
+      </AlertWrapper>
     </Container>
   );
 };
