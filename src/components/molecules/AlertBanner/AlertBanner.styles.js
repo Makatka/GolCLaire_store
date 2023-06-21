@@ -10,8 +10,8 @@ export const Alert = styled.div`
   padding: 0 30px;
   background-color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgba(240, 62, 62, .11)' : 'none')};
   background-color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgba(250, 194, 19, .11)' : 'none')};
-  border-color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgba(240, 62, 62)' : 'none')};
-  border-color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgba(250, 194, 19)' : 'none')};
+  border-color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgb(240, 62, 62)' : 'none')};
+  border-color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgb(250, 194, 19)' : 'none')};
 
 
   h4 {
@@ -20,23 +20,26 @@ export const Alert = styled.div`
     line-height: 1.4;
     margin-right: 20px;
     color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgba(240, 62, 62)' : 'none')};
-    color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgba(250, 194, 19)' : 'none')};
+    color: ${({type, theme: {colors}}) => (type === 'yellow' ? '#060606' : 'none')};
   }
 
   p {
     font-size: 14px;
     line-height: 1.6;
     margin-left: 20px;
+   
   }
 
   ${Button} {
     background-color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgba(240, 62, 62)' : 'none')};
     background-color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgba(250, 194, 19)' : 'none')};
+    color: ${({type, theme: {colors}}) => (type === 'yellow' ? '#060606' : 'none')};
     border-radius: 30px;
     padding: 11px 25px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    letter-spacing: ${({type}) => (type === 'red' ? '2px' : 'none')};   
+    text-transform: ${({type}) => (type === 'yellow' ? 'capitalize' : 'uppercase')};
     font-size: 12px;
+    white-space: nowrap;
   }
 `
 
