@@ -33,7 +33,7 @@ export const Alert = styled.div`
   ${Button} {
     background-color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgba(240, 62, 62)' : 'none')};
     background-color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgba(250, 194, 19)' : 'none')};
-    color: ${({type, theme: {colors}}) => (type === 'yellow' ? '#060606' : 'none')};
+    color: ${({type, theme: {colors}}) => (type === 'yellow' ? '#fff' : 'none')};
     border-radius: 30px;
     padding: 11px 25px;
     letter-spacing: ${({type}) => (type === 'red' ? '2px' : 'none')};   

@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 1500px;
+  max-width: 1560px;
   margin: 0 auto;
   transition: all .3s ease-in-out ;
-  padding: 0 10px;
+  padding: 0;
   
   @media screen and (max-width: 1400px){
     width: 100%;

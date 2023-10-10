@@ -1,13 +1,13 @@
 import React from 'react';
 import {BannerText, BannerWrapper} from './Banner.styles'
 
-const Banner = ({product, header, timeLine}) => {
+const Banner = ({product, header, subtitle, bannerImg}) => {
   return (
-    <BannerWrapper>
+    <BannerWrapper style={{backgroundImage: `url(${bannerImg})`}}>
       <BannerText>
         <span>{product}</span>
         <h2>{header}</h2>
-        <p>{timeLine}</p>
+        <p>{subtitle}</p>
         <p>See More products</p>
       </BannerText>
     </BannerWrapper>

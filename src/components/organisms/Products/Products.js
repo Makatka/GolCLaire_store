@@ -1,10 +1,10 @@
 import React from 'react';
 import ProductCart from "../../molecules/ProductCard/ProductCart";
 import productImage from "../../../assets/image/products/37000208_OR_B-450x450.jpg";
-import {ProductsWrapper} from "./ProductsGrid.styles";
+import {ProductsWrapper} from "./Products.styles";
 
 
-const ProductsGrid = () => {
+const Products = () => {
   return (
     <ProductsWrapper>
       <ProductCart img={productImage}/>
@@ -19,4 +19,4 @@ const ProductsGrid = () => {
   );
 };
 
-export default ProductsGrid;
+export default Products;

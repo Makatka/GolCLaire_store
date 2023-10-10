@@ -1,21 +1,29 @@
 import styled from "styled-components";
-import bannerImg from '../../../assets/image/banner.png'
+
 
 export const BannerWrapper = styled.a`
-  height: 750px;
-  background-image: url(${bannerImg});
+  width: 400px;
+  display: block; 
   position: relative;
   background-size: cover;
   background-position: center center;
+  border-radius: 15px;
+  flex-shrink: 0;
+  
+  @media screen and (max-width: 992px){
+    width: 100%;
+    height: 250px;
+  }
 
 `
 export const BannerText = styled.div`
-  color: white;
+  color: ${({theme}) => theme.colors.accent};
   position: absolute;
   bottom: 20px;
   text-align: center;
   width: 100%;
   font-size: 15px;
+
   
   span {
     font-size: 12px;

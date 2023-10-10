@@ -6,5 +6,5 @@ export const ViewAllLink = styled.a`
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
 `

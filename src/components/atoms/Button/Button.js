@@ -7,6 +7,7 @@ export const Button = styled.button`
   padding: 18px 30px;
   font-size: 16px;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: ${({isTransparent}) => (isTransparent ? 'white' : 'transparent')};

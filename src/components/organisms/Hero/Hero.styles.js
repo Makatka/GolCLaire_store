@@ -12,17 +12,16 @@ export const HeroWrapper = styled.div`
   ${Slider} {
     width: 70%;
   }
- 
-  ${BannerWrapper}{
-    min-width: 25%;
-    max-width: 370px;
+  
+  ${BannerWrapper} {
+    border-radius: 0;
+    
+    span, h2, p {
+      color: white;
+    }
   }
 
-  @media screen and (max-width: 1025px){
-    flex-direction: column;
-    ${BannerWrapper} {
-      max-width: 100%;
-      height: 300px;
-    }
+  @media screen and (max-width: 992px){
+    flex-direction: column;    
   }
 `
