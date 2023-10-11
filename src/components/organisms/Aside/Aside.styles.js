@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import InfoCard from "../../molecules/InfoCard/InfoCard";
+
 
 export const AsideSection = styled.aside`
   width: 400px;  
@@ -6,6 +8,9 @@ export const AsideSection = styled.aside`
   flex-direction: column;
   flex-shrink: 0;
   gap: 20px;
+
+  
+
 `
 
 export const Wrapper = styled.div`

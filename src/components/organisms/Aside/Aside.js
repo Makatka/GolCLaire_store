@@ -9,12 +9,14 @@ import Testimonials from "../../molecules/Testimonials/Testimonials";
 import AlertBanner from "../../molecules/AlertBanner/AlertBanner";
 import {Wrapper, AsideSection} from "./Aside.styles";
 import ProductBanners from "../../molecules/ProductBanners/ProductBanners";
+import ShopGuarantee from "../../molecules/ShopGuarantee/ShopGuarantee";
+
 
 const Aside = () => {
   return (
     <AsideSection>
       <Wrapper>
-        <CardHeader title='Futured Deals' />
+        <CardHeader title='Futured Deals'/>
         <ViewAllLink>View All</ViewAllLink>
       </Wrapper>
       <FeaturedProductCart image={image1} actionBtn='Add to cart' price='144.00' status='Expired'
@@ -23,11 +25,12 @@ const Aside = () => {
                            productName='The air scoop-neck tee'/>
       <FeaturedProductCart image={image3} actionBtn='Add to cart' price='240.00' status='Expired'
                            productName='Beaded double necklace'/>
-      <CardHeader title="Testimonials" />
-      <Testimonials />
+      <CardHeader title="Testimonials"/>
+      <Testimonials/>
       <AlertBanner type='yellow' header='2nd shopping campign!'
                    buttonText='Check Products' direction='column'/>
       <ProductBanners/>
+      <ShopGuarantee />
 
     </AsideSection>
   );
