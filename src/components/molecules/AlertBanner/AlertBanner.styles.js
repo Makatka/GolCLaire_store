@@ -3,6 +3,7 @@ import {Button} from "../../atoms/Button/Button";
 
 export const Alert = styled.div`
   display: flex;
+  flex-direction: ${({direction}) => (direction === 'column' ? 'column' : 'row')};
   justify-content: space-between;
   align-items: center;
   border: 1px dashed;
@@ -33,13 +34,14 @@ export const Alert = styled.div`
   ${Button} {
     background-color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgba(240, 62, 62)' : 'none')};
     background-color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgba(250, 194, 19)' : 'none')};
-    color: ${({type, theme: {colors}}) => (type === 'yellow' ? '#fff' : 'none')};
+    color: ${({type, theme: {colors}}) => (type === 'yellow' ? '#060606' : 'none')};
     border-radius: 30px;
     padding: 11px 25px;
     letter-spacing: ${({type}) => (type === 'red' ? '2px' : 'none')};   
     text-transform: ${({type}) => (type === 'yellow' ? 'capitalize' : 'uppercase')};
     font-size: 12px;
     white-space: nowrap;
+    width: ${({direction}) => (direction === 'column' ? '100%' : 'auto')};
   }
 `
 

@@ -39,10 +39,12 @@ import {createGlobalStyle} from "styled-components";
   margin-block-start: 0;
  }
  
- h4 {
+ h4, h6 {
   font-family: Manrope, sans-serif;
- 
+ letter-spacing: 2px;
  }
+ 
+ 
  
 `
 export default GlobalStyles

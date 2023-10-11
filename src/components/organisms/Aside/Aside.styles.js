@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Aside = styled.div`
+export const AsideSection = styled.aside`
   width: 400px;  
   display: flex;
   flex-direction: column;
