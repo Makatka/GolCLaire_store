@@ -1,11 +1,12 @@
 import React from 'react';
 import {Wrapper} from './InfoCard.styles'
+import CardHeader from "../../atoms/CardHeader/CardHeader";
 
 const InfoCard = ({icon, cardHeader, cardDetails}) => {
   return (
     <Wrapper>
       <span>{icon}</span>
-      <h4>{cardHeader}</h4>
+      <CardHeader title={cardHeader} />
       <p>{cardDetails}</p>
     </Wrapper>
   );

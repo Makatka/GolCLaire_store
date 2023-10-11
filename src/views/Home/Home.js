@@ -15,6 +15,8 @@ import Banner from "../../components/molecules/Banner/Banner";
 import Products from "../../components/organisms/Products/Products";
 import AlertBanner from "../../components/molecules/AlertBanner/AlertBanner";
 import {Article, SectionWrapper, AlertWrapper} from "./Home.styles";
+import Testimonials from "../../components/molecules/Testimonials/Testimonials";
+import CardHeader from "../../components/atoms/CardHeader/CardHeader";
 
 const Home = () => {
   return (
@@ -46,17 +48,17 @@ const Home = () => {
       <SectionWrapper>
         <Aside>
           <Wrapper>
-            <SectionHeader>Futured Deals</SectionHeader>
+            <CardHeader title='Futured Deals' />
             <ViewAllLink>View All</ViewAllLink>
           </Wrapper>
-
-
           <FeaturedProductCart image={image1} actionBtn='Add to cart' price='144.00' status='Expired'
                                productName='360deg Product'/>
           <FeaturedProductCart image={image2} actionBtn='Read more' price='95.00' status='Expired'
                                productName='The air scoop-neck tee'/>
           <FeaturedProductCart image={image3} actionBtn='Add to cart' price='240.00' status='Expired'
                                productName='Beaded double necklace'/>
+          <CardHeader title="Testimonials" />
+          <Testimonials />
 
         </Aside>
         <Article>
