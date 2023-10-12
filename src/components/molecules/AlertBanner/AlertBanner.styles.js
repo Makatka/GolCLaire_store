@@ -11,8 +11,10 @@ export const Alert = styled.div`
   padding: 0 30px;
   background-color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgba(240, 62, 62, .11)' : 'none')};
   background-color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgba(250, 194, 19, .11)' : 'none')};
+  background-color: ${({type, theme: {colors}}) => (type === 'green' ? 'rgba(157, 171, 134, 0.18)' : 'none')};
   border-color: ${({type, theme: {colors}}) => (type === 'red' ? 'rgb(240, 62, 62)' : 'none')};
   border-color: ${({type, theme: {colors}}) => (type === 'yellow' ? 'rgb(250, 194, 19)' : 'none')};
+  border-color: ${({type, theme: {colors}}) => (type === 'green' ? 'rgb(157, 171, 134)' : 'none')};
 
 
   h4 {

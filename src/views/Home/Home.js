@@ -8,7 +8,8 @@ import bannerImg3 from '../../assets/image/banner3.png';
 import Banner from "../../components/molecules/Banner/Banner";
 import Products from "../../components/organisms/Products/Products";
 import AlertBanner from "../../components/molecules/AlertBanner/AlertBanner";
-import {Article, SectionWrapper, AlertWrapper} from "./Home.styles";
+import { SectionWrapper, AlertWrapper} from "./Home.styles";
+import MainArticle from "../../components/organisms/MainArticle/MainArticle";
 
 
 const Home = () => {
@@ -40,15 +41,10 @@ const Home = () => {
 
       <SectionWrapper>
         <Aside />
+        <MainArticle />
 
-        <Article>
-          {//<Banner product="nose rings" header="Nose earrings" subtitle="25 nov - 29 nov"/>
-          }
-          {
-            // <Products/>
-          }
 
-        </Article>
+
       </SectionWrapper>
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductCart from "../../molecules/ProductCard/ProductCart";
+import ProductCard from "../../molecules/ProductCard/ProductCard";
 import productImage from "../../../assets/image/products/37000208_OR_B-450x450.jpg";
 import {ProductsWrapper} from "./Products.styles";
 
@@ -7,14 +7,14 @@ import {ProductsWrapper} from "./Products.styles";
 const Products = () => {
   return (
     <ProductsWrapper>
-      <ProductCart img={productImage}/>
-      <ProductCart sale img={productImage} rating={5}/>
-      <ProductCart img={productImage}/>
-      <ProductCart img={productImage}/>
-      <ProductCart img={productImage} rating={4}/>
-      <ProductCart sale img={productImage}/>
-      <ProductCart img={productImage}/>
-      <ProductCart sale img={productImage} rating={3}/>
+      <ProductCard img={productImage}/>
+      <ProductCard sale img={productImage} rating={5}/>
+      <ProductCard img={productImage}/>
+      <ProductCard img={productImage}/>
+      <ProductCard img={productImage} rating={4}/>
+      <ProductCard sale img={productImage}/>
+      <ProductCard img={productImage}/>
+      <ProductCard sale img={productImage} rating={3}/>
     </ProductsWrapper>
   );
 };

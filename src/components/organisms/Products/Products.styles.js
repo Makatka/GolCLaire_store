@@ -7,7 +7,7 @@ export const ProductsWrapper = styled.div`
   gap: 20px;
   width: 100%;
   height: 100%;
-  margin-left: 20px;
+  padding-left: 20px;
 
   @media screen and (max-width: 992px){
     margin: 20px 0;
