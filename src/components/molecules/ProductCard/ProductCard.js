@@ -6,9 +6,10 @@ import {AiOutlineHeart} from 'react-icons/ai'
 import {IoIosGitCompare} from 'react-icons/io'
 import ProductRating from '../../atoms/ProductRating/ProductRating'
 import ProductLabel from "../../atoms/ProductLabel/ProductLabel";
+import StackStatus from "../../atoms/StackStatus/StackStatus";
 
 
-const ProductCard = ({sale, img, rating}) => {
+const ProductCard = ({sale, img, rating, status}) => {
   return (
     <Wrapper>
       <ProductImage><img src={img} alt='product'/></ProductImage>
@@ -24,7 +25,9 @@ const ProductCard = ({sale, img, rating}) => {
       <ProductPrice>
         <p>$95.00</p>
         <ProductRating rating={rating}/>
+
       </ProductPrice>
+      <StackStatus stackStatus={status}/>
     </Wrapper>
   );
 };

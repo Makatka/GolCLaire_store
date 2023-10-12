@@ -44,6 +44,7 @@ import {createGlobalStyle} from "styled-components";
   h4, h6 {
    font-family: Manrope, sans-serif;
    letter-spacing: 2px;
+   
   }
 
 

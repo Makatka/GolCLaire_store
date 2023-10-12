@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import InfoCard from "../../molecules/InfoCard/InfoCard";
 
 
 export const AsideSection = styled.aside`

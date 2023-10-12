@@ -6,7 +6,7 @@ const theme = {
     text: '#7A7A7A',
     gold: '#FAC213',
     light_grey: '#F7F7F8',
-    semi_light_grey: '#E1E2E3',
+    semi_light_grey: '#e2e2e2',
     red: '#ef262c',
     success: '#398f14',
     success_bg: '#d4ffe7',
