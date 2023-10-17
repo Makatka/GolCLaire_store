@@ -1,16 +1,14 @@
 import styled from "styled-components";
-import slideImg1 from '../../../assets/image/slides/slide1.jpeg'
-import slideImg2 from '../../../assets/image/slides/slide2.jpeg'
 import {Button} from "../../atoms/Button/Button";
 
-export const SlideWrapper = styled.li`
+export const SlideWrapper = styled.div`
   position: relative;
-  background-image: url(${slideImg1});
   height: 100%;
   background-size: cover;
   background-position: center;
   width: 100%;
   display: block;
+  transition: all .3s ease-in-out;
 
   span {
     position: absolute;

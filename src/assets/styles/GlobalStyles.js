@@ -22,7 +22,6 @@ import {createGlobalStyle} from "styled-components";
 
   * {
    box-sizing: border-box;
-   transition: all .3s ease-in-out;
   }
 
   a, button {

@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section `
 
-  &>article:first-of-type {
-    
-    
-    
+  &>div:first-of-type {
+      
     &>a {
       height: 300px;
       width: 100%;
@@ -31,14 +29,12 @@ export const Wrapper = styled.section `
           font-size: 26px;
           margin-top: 10px;
         }
+        
         p:last-of-type {
           position: absolute;
           bottom: 20px;
-        }
-        
+        }        
       }
-    
-     
       
       span {
         font-size: 10px;
@@ -50,7 +46,22 @@ export const Wrapper = styled.section `
     
   }
 `
-export const ArticleWrapper = styled.article `
+export const ContainerSlides = styled.div`
+  width: 100%;
+  height: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+`
+export const ArticleWrapper = styled.div `
 
 
+`
+
+export const CarouselWrapper = styled.div`
+  width: 600px;
+  height: 400px;
+  margin: 10px auto;
+  overflow: hidden;
 `

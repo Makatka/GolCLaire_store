@@ -3,11 +3,10 @@ import Slide from "../../molecules/Slide/Slide";
 import {SliderWrapper} from './Slider.styles'
 
 
-const Slider = () => {
+const Slider = ({slides}) => {
   return (
     <SliderWrapper>
-
-        <Slide/>
+        <Slide slides={slides}/>
     </SliderWrapper>
   );
 };

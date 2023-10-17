@@ -26,7 +26,11 @@ const Aside = () => {
       <FeaturedProductCart image={image3} actionBtn='Add to cart' price='240.00' status='Expired'
                            productName='Beaded double necklace'/>
       <CardHeader title="Testimonials"/>
-      <Testimonials/>
+
+        <Testimonials/>
+
+
+
       <AlertBanner type='yellow' header='2nd shopping campign!'
                    buttonText='Check Products' direction='column'/>
       <ProductBanners/>
