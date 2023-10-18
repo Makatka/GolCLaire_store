@@ -12,23 +12,6 @@ import Carousel from "../Carousel/Carousel";
 const MainArticle = () => {
 
 
-  const carousel = [
-    {
-      idx: 1,
-      url: 'https://i.postimg.cc/jjfyQRFw/slide1.jpg'
-    },
-    {
-      idx: 2,
-      url: 'https://i.postimg.cc/JhjBHPsj/slide2.jpg'
-    },
-    {
-      idx: 3,
-      url: 'https://i.postimg.cc/P5YCXDtC/pexels-godisable-jacob-1191536.jpg'
-    },
-
-  ]
-
-
   return (
     <Wrapper>
       <ArticleWrapper>
@@ -40,12 +23,7 @@ const MainArticle = () => {
         <TopWeekProducts/>
 
       </ArticleWrapper>
-      <ContainerSlides>
-        <CarouselWrapper>
-          <Carousel elements={carousel}/>
-        </CarouselWrapper>
 
-      </ContainerSlides>
 
 
     </Wrapper>

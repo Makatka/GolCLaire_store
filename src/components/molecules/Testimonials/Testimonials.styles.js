@@ -1,14 +1,45 @@
 import styled from "styled-components";
-import userImage from '../../../assets/image/37040112_PL-99999999_01-80x80.jpg'
+
+export const TestimonialsWrapper = styled.div `
+  width: 100%;
+  overflow: hidden;
+`
+export const CarouselElements = styled.ul `
+  width: 100%;
+  display: flex;
+  align-items: center;
+ 
+  li {
+    width: 100%;
+    height: 400px;
+    background-color: ${({theme}) => theme.colors.accent};
+    padding: 40px;
+    border-radius: 10px;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    flex-shrink: 0;
+    color: white;
+    transition: all .5s ease-in;
+    transform: translateX(${({sliderNumber}) => sliderNumber}% );
+  }
+
+  
+`
+
 export const Wrapper = styled.div`
   width: 100%;
   height: 400px;
   background-color: ${({theme}) => theme.colors.accent};
   padding: 40px;
   border-radius: 10px;
-  color: white;
   font-family: 'Jost', sans-serif;
   display: flex;
+  flex-shrink: 0;
+  color: white;
+`
+
+export const Container = styled.li `
+  width: 100%;
   flex-direction: column;
 `
 export const FlexWrapper = styled.div`
@@ -17,16 +48,14 @@ display: flex;
   justify-content: left;
 `
 export const UserImage = styled.div`
-  background-image: url(${userImage});
   background-size: cover;
    width: 80px;
   height: 80px;
   border-radius: 50%;
- 
-  
+
 
 `
-export const UserName = styled.div`
+export const Author = styled.div`
 
   margin-left: 20px;
   letter-spacing: 1px;
@@ -56,3 +85,4 @@ export const TestimonialsText = styled.div`
  }
 
 `
+
