@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {TestimonialsWrapper, CarouselElements, Container, Author, UserImage, TestimonialsText, FlexWrapper} from "./Testimonials.styles"
-import user1 from '../../../assets/image/user1.jpg'
-import user2 from '../../../assets/image/user2.jpg'
-import user3 from '../../../assets/image/user3.jpg'
+
 
 
 const Testimonials = () => {
@@ -86,10 +84,8 @@ const Testimonials = () => {
             <p>{elements[2].testimonialText}</p>
           </TestimonialsText>
         </Container>
-
       </CarouselElements>
     </TestimonialsWrapper>
-
   );
 };
 

@@ -8,6 +8,7 @@ export const Wrapper = styled.article`
   padding: 40px 20px 20px 0;
   width: 100%;
   justify-content: space-between;
+  margin-top: 20px;
 
   &:before {
     content: '';

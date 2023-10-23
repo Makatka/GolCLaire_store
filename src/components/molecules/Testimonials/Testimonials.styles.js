@@ -19,7 +19,7 @@ export const CarouselElements = styled.ul `
     display: flex;
     flex-shrink: 0;
     color: white;
-    transition: all .5s ease-in;
+    transition: all 1.5s ease-in;
     transform: translateX(${({sliderNumber}) => sliderNumber}% );
   }
 

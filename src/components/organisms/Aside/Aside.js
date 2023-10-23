@@ -10,7 +10,7 @@ import AlertBanner from "../../molecules/AlertBanner/AlertBanner";
 import {Wrapper, AsideSection} from "./Aside.styles";
 import ProductBanners from "../../molecules/ProductBanners/ProductBanners";
 import ShopGuarantee from "../../molecules/ShopGuarantee/ShopGuarantee";
-import Carousel from "../Carousel/Carousel";
+
 
 
 const Aside = () => {
